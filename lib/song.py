@@ -26,19 +26,19 @@ class Song:
         """Increments the total song count by 1."""
         cls.count += 1
 
-    # @classmethod
+    @classmethod
     def add_to_genres(cls, genre):
         """Adds a genre to the genres list only if it doesn't already exist (no duplicates)."""
         if genre not in cls.genres:
             cls.genres.append(genre)
 
-    # @classmethod
+    @classmethod
     def add_to_artists(cls, artist):
         """Adds an artist to the artists list only if they don't already exist (no duplicates)."""
         if artist not in cls.artists:
             cls.artists.append(artist)
 
-    # @classmethod
+    @classmethod
     def add_to_genre_count(cls, genre):
         """
         Updates genre_count dictionary:
@@ -50,7 +50,7 @@ class Song:
         else:
             cls.genre_count[genre] = 1
 
-    # @classmethod
+    @classmethod
     def add_to_artist_count(cls, artist):
         """
         Updates artist_count dictionary:
